@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { AngularCliHerokuBoilerplatePage } from './app.po';
 
-describe('imr-seating-app-client App', () => {
-  let page: AppPage;
+describe('angular-cli-heroku-boilerplate App', () => {
+  let page: AngularCliHerokuBoilerplatePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new AngularCliHerokuBoilerplatePage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
